@@ -27,9 +27,6 @@ class CssInlinerPlugin implements Swift_Events_SendListener {
 			$this->converter = new CssToInlineStyles();
 			$this->converter->setUseInlineStylesBlock(true);
 		}
-
-		// Add Ink (ZURB) dependency
-		$this->converter->setCSS(file_get_contents("http://lsi.cy.l/cdn/ink.css"));
 	}
 
 	/**
